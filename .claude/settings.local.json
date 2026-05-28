@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__claude_ai_PDF_Viewer__list_pdfs",
+      "mcp__claude_ai_PDF_Viewer__display_pdf",
+      "PowerShell(& \"C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\.venv\\\\Scripts\\\\python.exe\" --version)",
+      "PowerShell(& \"C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\.venv\\\\Scripts\\\\python.exe\" -m pip install -r \"C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\requirements.txt\" 2>&1 | Select-Object -Last 30)",
+      "PowerShell(& \"C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\.venv\\\\Scripts\\\\python.exe\" -m pytest \"C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\tests\" -v 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\.venv\\\\Scripts\\\\python.exe\" -m pytest \"C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\tests\\\\test_template.py\" -k \"TestCallOpenAI or TestCallGemini or TestCallAnthropic or TestCompareModels\" -v 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\.venv\\\\Scripts\\\\python.exe\" -c \"import ast; ast.parse\\(open\\(r'C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\starter-code\\\\template.py', encoding='utf-8'\\).read\\(\\)\\); print\\('Syntax OK'\\)\")",
+      "PowerShell(& \"C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\.venv\\\\Scripts\\\\python.exe\" \"C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\starter-code\\\\_quick_test.py\" 2>&1)",
+      "PowerShell(& \"C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\.venv\\\\Scripts\\\\python.exe\" -c \"import sys; sys.path.insert\\(0, r'C:\\\\Users\\\\Kaito\\\\Documents\\\\Test\\\\llm-foundation-Khaipropt\\\\starter-code'\\); from template import call_gemini; t, l, u = call_gemini\\('Say hi in 3 words.', max_tokens=256\\); print\\(f'text={t!r}'\\); print\\(f'latency={l:.2f}s'\\); print\\(f'usage={u}'\\)\")",
+      "Bash(.venv/Scripts/python.exe *)"
+    ]
+  }
+}
